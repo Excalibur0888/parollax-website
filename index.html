@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	<script src="js/app.js" defer></script>
+
+</head>
+<body>	
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">Welcome to miracles</div>
+						<div class="layers__title">Fairy story</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+				</div>
+			</header>
+		
+			<article class="dungeon" style="background-image: url(img/dungeon.jpg);">
+				<div class="dungeon__content">
+					<h2 class="dungeon__header">Mystery dungeon</h2>
+					<p class="dungeon__paragraph">Here you will find a huge number of mysteries and trials, which only a brave, stubborn and generous person can cope with. Are you ready for the adventure? Hope so...</p>
+					<form autocomplete="off" class="first_form">
+					<label for="name" class="first_label">But at first you need to introduce yourself</label>
+					<input type="text" id="name" name="name" placeholder="Brave adventurer" class="first_input" required>
+					<input type="submit" value="Confirm" name="submit" class="first_submit"><br/>
+					<div id="result"></div>
+					</form>
+				</div>
+			</article>
+			<article class="dungeon2">
+				<div class="dungeon2_layers">
+					<div class="layer_dungeon2 dungeon2_back" style="background-image: url(img/dungeon2_back.png);"></div>
+					<div class="layer_dungeon2 dungeon2_front" style="background-image: url(img/dungeon2_front.png);"></div>
+				</div>
+
+				<section class="showcase">
+					<div class="showcase__content-wrapper">
+			
+							<div class="showcase-carousel">
+			
+								<div class="swiper-wrapper">
+			
+									<div id='sword' class="swiper-slide showcase-carousel__item">
+										<img src="img/sword.png">
+									</div>
+			
+									<div id='bow' class="swiper-slide showcase-carousel__item">
+										<img src="img/bulava.png">
+									</div>
+			
+									<div class="swiper-slide showcase-carousel__item">
+										<img src="img/axe.png">
+									</div>
+			
+									<div class="swiper-slide showcase-carousel__item">
+										<img src="img/crossbow.png">
+									</div>
+			
+								</div>
+			
+							</div>
+			
+							<div class="showcase-navigation">
+								<div class="showcase-navigation__prev"></div>
+								<div class="showcase-navigation__next"></div>
+							</div>
+			
+						</div>
+
+				</section>
+				<h2 id="dungeon2__header">Choose your weapon</h2>
+				<div class="light" style="background-image: url(img/light.png);"></div>
+				<button id="first_button" style="background-image: url(img/wood.jpg);">Select</button>
+			</article>
+			<article class="forest">
+				<div class="forest__main" style="background-image: url(img/forest.jpg);">
+					<h2 class="forest__header">Hope you will survive...</h2>
+					<a class="forest__caption" href="http://lomando.com/main.html" target="_blank"><h3>Only brave must click on me	</h3></a>
+					<p class="copyright">&copy Silence</p>
+				</div>
+			</article>	
+		</div>
+	</div>
+</body>
+</html>
