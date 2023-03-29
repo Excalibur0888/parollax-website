@@ -470,8 +470,9 @@ body {
 	color: #767676;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: 90vh;
 	bottom: 0;
+	z-index: 100;
 }
 
 /* ANIMATIONS */
