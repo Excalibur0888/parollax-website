@@ -455,7 +455,6 @@ body {
 	color: #fff;
 	text-decoration: none;
 	letter-spacing: calc(var(--index) / 10);
-
 	font-family: assasin-st, serif;
 	text-shadow: 0 0 10px #000;
 	font-size: calc(var(--index) * .9);
@@ -472,7 +471,7 @@ body {
 	left: 0;
 	right: 0;
 	top: 0;
-	bottom: 1;
+	bottom: 0;
 }
 
 /* ANIMATIONS */
