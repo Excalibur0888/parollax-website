@@ -40,11 +40,6 @@ body {
 	position: relative;
 	overflow-x: hidden;
 }
-@media (max-width: 1000px) {
-	body {
-		overflow-x: hidden;
-	}
-}
 .main-header {
 	position: relative;
 }
@@ -355,8 +350,6 @@ body {
 /* continue */
 
 #dungeon2__header {
-	transform: var(--dungeon-transform);
-	transition: var(--transition);
 	position: absolute;
 	color: #010101;
 	background-position: center;
@@ -366,7 +359,7 @@ body {
 	width: 100%;
 	text-shadow: 0 0 10px rgb(255, 255, 255);
 	z-index: 1;
-	top: 35vh;
+	top: 5vh;
 	background-image: url(../img/dungeon2_header_bg.jpg);
 	font-family: assassin-st, sans-serif;
 	font-size: calc(var(--index) * 1.8);

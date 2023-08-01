@@ -6,9 +6,6 @@ ScrollSmoother.create({
 	wrapper: '.wrapper',
 	content: '.content'
 });
-window.addEventListener('resize', function () {
-  document.body.style.zoom = '1';
-});
 //задаем переменные для элементов html
 const form = document.querySelector('form');
 const submit = document.getElementsByClassName('first_submit');
