@@ -6,7 +6,29 @@ ScrollSmoother.create({
 	wrapper: '.wrapper',
 	content: '.content'
 });
-//задаем переменные для элементов html
+window.addEventListener("load", function () {
+  disableHorizontalScroll();
+});
+
+function disableHorizontalScroll() {
+  const viewportWidth = Math.max(
+    document.documentElement.clientWidth || 0,
+    window.innerWidth || 0
+  );
+  const documentWidth = document.documentElement.scrollWidth;
+  const widthDifference = documentWidth - viewportWidth;
+  if (widthDifference > 0) {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
+}
+window.addEventListener("resize", function () {
+  disableHorizontalScroll();
+});
+
 const form = document.querySelector('form');
 const submit = document.getElementsByClassName('first_submit');
 const name1 = document.getElementById('name');
@@ -18,13 +40,12 @@ const user_name = {nickname: ''}
 
 form.addEventListener('submit', (event) => {
 	let index = 0;
-  event.preventDefault(); // отменяем действие по умолчанию
+  event.preventDefault();
 	submit[0].disabled = true;
 	name1.disabled = true;
 	const name = form.elements.name.value;
 	user_name.nickname = name;
 	const text_f = `Good luck, ${name}`;
-  // выводим результат в div с id="result"
   const intervalId = setInterval(() => {
 		result.textContent += text_f[index];
 		index++;

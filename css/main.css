@@ -35,6 +35,9 @@ body {
 	color: var(--text);
 	position: relative;
 	overflow-x: hidden;
+	touch-action: pan-y;
+  -ms-touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
 }
 .main-header {
 	position: relative;
@@ -259,15 +262,13 @@ body {
 
 .showcase-carousel .swiper-wrapper {
 	transition: var(--transition2);
-	overflow: hidden;
 }
 .showcase-carousel__item {
 	position: relative;
 	text-align: center;
 	opacity: .25;
 	transform: scale(.75);
-	transition: opacity 1.8s var(--transition2), transform 1.8s var(--transition2);
-	overflow: hidden;
+	transition: opacity 1.8s var(--transition2), transform 1.8s var(--transition2)
 }
 
 .showcase-carousel__item img {
@@ -289,7 +290,6 @@ body {
 .showcase-carousel__item.swiper-slide-active {
 	opacity: .8;
 	transform: scale(.98);
-	overflow: hidden;
 }
 
 .showcase-carousel__image-wrapper > * {
@@ -298,11 +298,8 @@ body {
 	height: 100%;
 	perspective: 150px;
 	transform-style: preserve-3d;
-	overflow: hidden;
 }
-
 /* NAVIGATION */
-
 .showcase-navigation {
 	overflow: hidden;
 	height: 100vh;
@@ -311,7 +308,6 @@ body {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	overflow: hidden;
 }
 .showcase-navigation.disabled {
 	display: none;
