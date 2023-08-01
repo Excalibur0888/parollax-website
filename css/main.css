@@ -364,7 +364,7 @@ body {
 
 @media (max-width: 500px) {
 	#dungeon2__header {
-		top: 30vh;
+		top: 20vh;
 		background-size: 65% 100%;
 	}
 }
