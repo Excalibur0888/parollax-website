@@ -283,7 +283,7 @@ body {
 @media (max-width: 700px) {
 	.showcase-carousel__item img {
 		bottom: 40vh;
-		transform: scale(1.4);
+		transform: scale(2);
 	}
 }
 
@@ -356,7 +356,7 @@ body {
 	width: 100%;
 	text-shadow: 0 0 10px rgb(255, 255, 255);
 	z-index: 1;
-	top: 5vh;
+	top: 8vh;
 	background-image: url(../img/dungeon2_header_bg.jpg);
 	font-family: assassin-st, sans-serif;
 	font-size: calc(var(--index) * 1.8);
@@ -387,6 +387,14 @@ body {
 		animation: box-shadow_first 2s alternate infinite;
 		transition: transform 0.3s;
 		transform-style: preserve-3d;
+}
+@media (max-width: 500px) {
+	#first_button {
+		width: 25vw;
+		height: 10vw;
+		justify-self: center;
+		left: 38%;
+	}
 }
 #first_button::before {
   position: absolute;
