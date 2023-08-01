@@ -13,6 +13,9 @@
 	--regular-text: 16px;
 	--lineheight: 1.65;
 }
+body {
+	overflow-x: hidden;
+}
 @font-face {
 	font-family: assassin-st;
 	src: url(../fonts/assassin.woff2);
