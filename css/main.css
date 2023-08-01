@@ -14,9 +14,6 @@
 	--regular-text: 16px;
 	--lineheight: 1.65;
 }
-body {
-	overflow-x: hidden;
-}
 @font-face {
 	font-family: assassin-st;
 	src: url(../fonts/assassin.woff2);
@@ -36,7 +33,6 @@ body {
 	line-height: 1.55;
 	line-height: var(--lineheight);
 	color: var(--text);
-	min-width: 320px;
 	position: relative;
 	overflow-x: hidden;
 }
@@ -368,7 +364,7 @@ body {
 
 @media (max-width: 500px) {
 	#dungeon2__header {
-		top: 50vh;
+		top: 30vh;
 		background-size: 65% 100%;
 	}
 }
