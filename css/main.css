@@ -259,6 +259,7 @@ body {
 
 .showcase-carousel .swiper-wrapper {
 	transition: var(--transition2);
+	overflow-x: hidden;
 }
 .showcase-carousel__item {
 	position: relative;
@@ -287,6 +288,7 @@ body {
 .showcase-carousel__item.swiper-slide-active {
 	opacity: .8;
 	transform: scale(.98);
+	overflow-x: hidden;
 }
 
 .showcase-carousel__image-wrapper > * {
@@ -295,6 +297,7 @@ body {
 	height: 100%;
 	perspective: 150px;
 	transform-style: preserve-3d;
+	overflow-x: hidden;
 }
 
 /* NAVIGATION */
