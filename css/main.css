@@ -259,14 +259,15 @@ body {
 
 .showcase-carousel .swiper-wrapper {
 	transition: var(--transition2);
-	overflow-x: hidden;
+	overflow: hidden;
 }
 .showcase-carousel__item {
 	position: relative;
 	text-align: center;
 	opacity: .25;
 	transform: scale(.75);
-	transition: opacity 1.8s var(--transition2), transform 1.8s var(--transition2)
+	transition: opacity 1.8s var(--transition2), transform 1.8s var(--transition2);
+	overflow: hidden;
 }
 
 .showcase-carousel__item img {
@@ -288,7 +289,7 @@ body {
 .showcase-carousel__item.swiper-slide-active {
 	opacity: .8;
 	transform: scale(.98);
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .showcase-carousel__image-wrapper > * {
@@ -297,7 +298,7 @@ body {
 	height: 100%;
 	perspective: 150px;
 	transform-style: preserve-3d;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 /* NAVIGATION */
@@ -310,6 +311,7 @@ body {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	overflow: hidden;
 }
 .showcase-navigation.disabled {
 	display: none;
