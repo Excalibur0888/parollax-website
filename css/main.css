@@ -282,8 +282,8 @@ body {
 
 @media (max-width: 700px) {
 	.showcase-carousel__item img {
-		bottom: 40vh;
-		transform: scale(2);
+		bottom: 50vh;
+		transform: scale(1.8);
 	}
 }
 
